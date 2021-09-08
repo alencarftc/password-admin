@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["shared/components/*"],
+      "@configs/*": ["shared/configs/*"],
+      "@layouts/*": ["shared/layouts/*"],
+      "@utils/*": ["shared/utils/*"],
+      "@pages/*": ["pages/*"],
+      "@sass/*": ["assets/sass/*"]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": ["node_modules", "build", "coverage", "dist", "lib"]
+}

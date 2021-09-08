@@ -1,0 +1,35 @@
+@use "@sass/abstracts/mixins" as mix;
+@use "@sass/themes/default" as default;
+
+.button {
+  background: darken(#37539e, 1.5);
+  color: #ffffff;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.button-primary {
+  @include mix.linear-gradient(#fea05f, #fad590);
+  color: default.$primary-color;
+  transition: background 300ms ease-out;
+
+  &:hover {
+    @include mix.linear-gradient(#fea05f, #c68916);
+  }
+}
+
+.button-size-auto {
+  font-size: 16rem;
+  padding: 12px 12px;
+}
+
+.button-size-small {
+  font-size: 16rem;
+  padding: 12px 44px;
+}
+
+.button-size-medium {
+  font-size: 20rem;
+  padding: 15px 30px;
+}

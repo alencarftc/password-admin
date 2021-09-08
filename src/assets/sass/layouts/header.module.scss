@@ -1,0 +1,32 @@
+@use "@sass/abstracts/mixins" as mix;
+
+.header {
+  background: #ffffff;
+  box-shadow: 0 5px 20px #c0e5fc58;
+  width: 100%;
+  position: sticky;
+  top: calc(-100% + 88px);
+  z-index: 1;
+  transition: top 0.2s ease-in-out;
+
+  div {
+    @include mix.to-flex($justify: space-between, $align: center);
+    height: 88px;
+  }
+
+  ul {
+    @include mix.to-flex();
+
+    li {
+      font-size: 16rem;
+      margin-right: 32px;
+      color: #687aff;
+      text-transform: uppercase;
+      font-weight: 500;
+
+      &:hover {
+        color: #72b7e2;
+      }
+    }
+  }
+}

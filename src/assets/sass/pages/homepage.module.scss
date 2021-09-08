@@ -1,0 +1,9 @@
+@use "@sass/abstracts/mixins" as mix;
+
+.portfolio {
+	@include mix.linear-gradient(
+		rgba(175, 206, 253, 0.12),
+		rgba(243, 243, 255, 0.12),
+		$angle: -180deg
+	);
+}
